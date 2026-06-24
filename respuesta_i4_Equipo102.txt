@@ -1,0 +1,28 @@
+A- ¿Qué color de fondo tiene su página en el TESTING ?
+Blue 
+
+B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
+Yellow
+
+C- ¿Qué color de fondo tiene su página en el MASTER?
+
+Blue, porque se hizo merge de testing al master después de desarrollo
+D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
+
+Quedó el favicon de BETA, porque fue el último cambio que se mergeó desde TESTING al MASTER.
+
+
+E- ¿Algún integrante tuvo problemas al hacer el push? Tuvieron problemas BETA y GAMMA
+
+F- ¿Qué problemas surgieron? Como había una linea con otro código distinto y no hicimos pull antes no dejaba hacer push
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada? 
+Se puede hacer un pull primero y agregar información después o se puede hacer un git pull origin testing y resolver los conflictos manualmente ,las consecuencias en el git pull que se conservan los cambios y se genera un nuevo commit con la resolución o se puede usar git push - f que aplicaría los cambios a la fuerza  pero se pierde cambios de otros colaboradores 
+
+H- ¿Qué sucede si cada uno utiliza el push -f?
+ Se fuerza un cambio y sobreescribe líneas de código 
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?  
+Hacer un pull resolviendo conflictos , hacer el commit de la resolución y luego mergear de testing a desarrollo 
